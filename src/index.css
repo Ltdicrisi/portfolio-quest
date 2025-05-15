@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(18, 150, 135, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -65,4 +65,37 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.about {
+  background-color: #e0ffe0;
+  padding: 2rem;
+  border: 2px solid #88cc88;
+  border-radius: 10px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 0 10px #44aa44;
+}
+.projects {
+  padding: 2rem;
+  background: #f0f8ff;
+  border-top: 2px solid #ccc;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 2px solid #88c;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(100, 100, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-car:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(100, 100, 255, 0.3);
 }
