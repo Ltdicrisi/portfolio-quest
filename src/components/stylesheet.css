@@ -1,9 +1,9 @@
 .about {
-    background-color: #e0ffe0;
+    background-color: var(--color-primary);
     padding: 2rem;
-    border: 2px solid #88cc88;
+    border: 2px solid var(--color-light);
     border-radius: 10px;
     font-family: 'Georgia', serif;
-    box-shadow: 0 0 10px #44aa44;
+    box-shadow: 0 0 10px var(--color-secondary);
   }
   

@@ -1,6 +1,6 @@
 function About() {
     return (
-        <section className="about">
+        <section className="projects">
             <h2>About Me</h2>
             <p>
         Hail! I am <strong>Lauren “Emerald Hawthorne” Di Crisi</strong>, a Druid of the Digital Realm.
