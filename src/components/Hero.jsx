@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import waxSeal from "../assets/images/waxSeal";
+import waxSeal from "../assets/images/waxSeal.webp";
 import heroBg from "../assets/images/hero-bg.webp";
-import "../Hero.css";
+import "./Hero.css";
 import { initialize, write, FONT_MATRIX } from "khoshnus";
 import "khoshnus/style.css";
 
