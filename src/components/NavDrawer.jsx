@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NavDrawer.css'; // You’ll style it here
-import menuImage from '../assets/menu-icon-wide.webp'; // Use your final chosen image
+import menuImage from '../assets/images/menu-icon-wide.webp'; // Use your final chosen image
 
 function NavDrawer() {
   const [isOpen, setIsOpen] = useState(false);
