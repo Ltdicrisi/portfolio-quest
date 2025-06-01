@@ -13,12 +13,25 @@
 }
 
 .menu-img {
-  width: 60px;
+  width: 90px;
+  height: auto;
   transition: transform 0.5s ease;
+  filter: drop-shadow(0 0 4px var(--gold-glow));
+}
+
+@media (max-width: 768px) {
+  .menu-img {
+    width: 55px;
+  }
 }
 
 .menu-img.rotate {
   transform: rotate(180deg);
+}
+
+.menu-img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px var(--gold-glow));
 }
 
 .drawer {
