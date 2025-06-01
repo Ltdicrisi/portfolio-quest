@@ -90,12 +90,3 @@
     transform: translateY(0);
   }
 }
-.menu-icon {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  font-size: 2rem;
-  color: var(--color-text); /* Or use #fff to test */
-  cursor: pointer;
-  z-index: 5; /* Ensure it's above the overlay and image */
-}
