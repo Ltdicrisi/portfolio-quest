@@ -6,17 +6,20 @@ import { initialize, write, FONT_MATRIX } from "khoshnus";
 import "khoshnus/style.css";
 
 function Hero() {
-    useEffect(() =>{
-        initialize();
-        write({
-            text: "Welcome, Traveler...",
-            fontMatrix: FONT_MATRIX.SCRIPTINA,
-            size: 80,
-            color: "#df21ff", //Matches --color-accent
-            elementId: "handwriting",
-            strokeWidth: 3,
-        });
-    }, []);
+useEffect(() => {
+  const pen = new Manuscript({
+    svgId: "handwriting",
+    fontMatrix: "SCRIPTINA"  // Optional here; move to write config if needed
+  });
+
+  pen.write("Welcome, Traveler...", {
+    fontMatrix: "SCRIPTINA",  // Only if needed
+    size: 80,
+    color: "#df21ff",
+    strokeWidth: 3
+  });
+}, []);
+
 
     return (
     <section className="hero-section">
