@@ -1,22 +1,27 @@
-export default function Contact() {
-    return (
-      <section className="contact">
-        <h2>Contact</h2>
-        <p>Reach me via email, GitHub, or raven if enchanted.</p>
-      <form className="contact-form">
-  <label>Name</label>
-  <input type="text" name="name" required />
+import React from "react";
+import "./Contact.css";
 
-  <label>Email</label>
-  <input type="email" name="email" required />
+function Contact() {
+  return (
+    <section className="contact-section">
+      <h2>Let’s Connect</h2>
+      <form name="contact" method="POST" data-netlify="true" className="contact-form">
+        {/* Netlify hidden input for backend handling */}
+        <input type="hidden" name="form-name" value="contact" />
 
-  <label>Message</label>
-  <textarea name="message" rows="5" required></textarea>
+        <label htmlFor="name">Name</label>
+        <input type="text" name="name" required />
 
-  <button type="submit">Send Message</button>
-</form>
+        <label htmlFor="email">Email</label>
+        <input type="email" name="email" required />
 
-     </section>
-    );
-  }
+        <label htmlFor="message">Message</label>
+        <textarea name="message" rows="5" required />
 
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  );
+}
+
+export default Contact;
