@@ -3,9 +3,9 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
-import './src/App.css';
+import './App.css';
 import './components/stylesheet.css';
-import Hero from './components/hero';
+import Hero from './components/Hero';
 
 function App() {
 return(

@@ -1,8 +1,8 @@
 import "./Navbar.css";
-import aboutIcon from "../assets/id-card.png";
-import projectIcon from "../assets/project.png";
-import contactIcon from "../assets/email.png";
-import homeIcon from "../assets/house.png";
+import aboutIcon from "../assets/icons/id-card.png";
+import projectIcon from "../assets/icons/project.png";
+import contactIcon from "../assets/icons/email.png";
+import homeIcon from "../assets/icons/house.png";
 
 export default function Navbar() {
     return (
