@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import frameImage from "../assets/images/deco-frame.webp"; // update path if needed
+import frameImage from "../assets/images/frame-image.webp"; // update path if needed
 
 function Contact() {
   return (
