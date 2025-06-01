@@ -10,12 +10,9 @@ function App() {
 
 return(
   <div className="app-container">
-    
     <main>
-      <section id="hero">
-    <h1 className="hero-title">Lauren DiCrisi's Portfolio</h1>
-    </section>
-    <section className="about">
+    <Hero />
+     <section className="about">
     <About />
     </section>
     <section className="projects">
