@@ -1,5 +1,5 @@
 import React from "react";
-import waxSeal from "../assets/waxSeal.webp";
+import waxSeal from "../assets/images/waxSeal";
 
 function Hero() {
     return(
