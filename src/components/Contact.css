@@ -48,14 +48,42 @@
   background-color: var(--color-accent-hover);
 }
 
+
 .contact-frame {
-  background-color: url('/src/assets/images/frame-image.webp') no-repeat center center;
-  background-size: contain;
-  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 600px; /*Adjust as needed */
-  margin: 0 auto;
-  padding: 3rem; /* Add spacing so form doesnt hit the edge */
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(90deg); /* or remove if you updated the image to horizontal */
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.contact-frame-wrapper {
   position: relative;
-  aspect-ratio: 3 / 4; /* Preserve verticle space when rotated */
+  width: 100%;
+  max-width: 700px; /* Finite size */
+  height: auto;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--glow-gold);
+  display: flex;
+  flex-direction: column;
 }
