@@ -113,3 +113,12 @@ html {
     opacity:1;
   }
 }
+
+.hero-title {
+  font-family: var(--font-header);
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--color-accent);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
