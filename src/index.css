@@ -1,15 +1,17 @@
 :root {
   /*THEME COLORS */
-  --color-bg: #2f0049;
-  --color-primary: #5f03bd;
-  --color-secondary: #8407ce;
-  --color-accent: #df21ff;
-  --color-light: #fe02ff;
-  --color-text: #ccffe0;
+  --color-bg: #1d1617; /* Darkest base for body bkground */
+  --color-primary: #262630; /*Primary panel bkground */
+  --color-secondary: #2a374d; /* Secondary panels or highlights */
+  --color-accent: #9f6932; /*Accent gold (titles, borders, hover) */
+  --color-highlight: #522623; /* Deep red leather for strong accents */
+  --color-muted: #444a41; /* Subtle contrast or dividers */
+  --color-text: #f4f4f2; /* main body text */
+  --color-text-muted: #d6cec2; /* Lighter, subtle supporting text */
 
   /*FONTS*/
-  --font-header: 'Orbitron', sans-serif;
-  --font-body: 'Lato', sans-serif;
+  --font-header: 'Playfair display', serif; /* Elegant serif for headers */
+  --font-body: 'Lato', sans-serif; /* Modern readable body text */
 
 }
 
