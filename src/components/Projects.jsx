@@ -28,6 +28,36 @@ function Projects (){
                     </p>
                     <a href="https://github.com/Ltdicrisi/portfolio-quest" target="_blank">View on GitHub</a>
                 </div>
+
+                {/* Project 3 */}
+                <div className="project-card">
+                    <h3>Curated Souf</h3>
+                    <p>
+                        This very site! A showcases of skills and story, crafted in Vite+ React and styles with whimsy.
+                    </p>
+                    <p>
+                    <strong>
+                        Tech:
+                    </strong>
+                    Vite, React, CSS
+                    </p>
+                    <a href="https://github.com/Ltdicrisi/portfolio-quest" target="_blank">View on GitHub</a>
+                </div>
+
+                {/* Project 4 */}
+                <div className="project-card">
+                    <h3>ShiftSync</h3>
+                    <p>
+                        This very site! A showcases of skills and story, crafted in Vite+ React and styles with whimsy.
+                    </p>
+                    <p>
+                    <strong>
+                        Tech:
+                    </strong>
+                    Vite, React, CSS
+                    </p>
+                    <a href="https://github.com/Ltdicrisi/portfolio-quest" target="_blank">View on GitHub</a>
+                </div>
             </div>
         </section>
     );

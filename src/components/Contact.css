@@ -4,24 +4,32 @@
   text-align: center;
 }
 
-.contact-form {
-  max-width: 600px;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  text-align: left;
+.contact-form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: white;
+  font-weight: 500;
 }
 
 .contact-form input,
 .contact-form textarea {
+  width: 100%;
   padding: 0.75rem;
-  border: 1px solid var(--color-border);
-  background-color: var(--color-bg-alt);
-  color: var(--color-text);
-  font-family: inherit;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glow-gold);
+  border-radius: 5px;
+  color: white;
   font-size: 1rem;
-  border-radius: 4px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background-color: var(--glow-gold);
+  box-shadow: 0 0 5px var(--glow-gold);
+  border-color: var(--color-bg);
 }
 
 .contact-form button {
@@ -38,4 +46,16 @@
 
 .contact-form button:hover {
   background-color: var(--color-accent-hover);
+}
+
+.contact-frame {
+  background-color: url('/src/assets/images/frame-image.webp') no-repeat center center;
+  background-size: contain;
+  transform: rotate(90deg);
+  width: 100%;
+  max-width: 600px; /*Adjust as needed */
+  margin: 0 auto;
+  padding: 3rem; /* Add spacing so form doesnt hit the edge */
+  position: relative;
+  aspect-ratio: 3 / 4; /* Preserve verticle space when rotated */
 }

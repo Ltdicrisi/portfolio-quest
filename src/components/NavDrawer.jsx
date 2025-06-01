@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './NavDrawer.css'; // You’ll style it here
 import menuImage from '../assets/images/menu-icon-wide.webp'; // Use your final chosen image
 
@@ -8,6 +8,14 @@ function NavDrawer() {
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect (() => {
+    let timer;
+    if (isOpen) {
+      timer = setTimeout(() => setIsOpen(false), 3000);
+    }
+    return () => clearTimeout(timer);
+  }, [isOpen]);
 
   return (
     <div className="navdrawer-container">
