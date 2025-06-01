@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./Hero.css";
 
 function Hero() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
   return (
     <section className="hero-section">
       <img src= "/herobg.webp" alt="Library background" className="hero-bg" />
