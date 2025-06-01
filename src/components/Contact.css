@@ -3,8 +3,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
 }
-
 
 .contact-form label {
   display: block;
@@ -57,22 +59,23 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transform: rotate(90deg); /* or remove if you updated the image to horizontal */
+  object-fit: contain; /* More graceful scaling */
+  transform: rotate(90deg); /* Remove if you use a horizontal version */
   z-index: 0;
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.5;
+  padding: 1rem;
 }
 
 .contact-frame-wrapper {
   position: relative;
   width: 100%;
-  max-width: 700px; /* Finite size */
-  height: auto;
+  max-width: 700px;
   margin: 2rem auto;
-  padding: 4rem 2rem;
+  padding: 2rem;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -102,4 +105,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.contact-heading {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
