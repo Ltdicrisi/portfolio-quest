@@ -21,8 +21,11 @@ function NavDrawer() {
     <div className="navdrawer-container">
       {/* Menu Button */}
       <button className="menu-button" onClick={toggleDrawer} aria-label="Toggle Menu">
-        <img src={menuImage} alt="Menu" className={`menu-img ${isOpen ? 'rotate' : ''}`} />
-      </button>
+  <div className="menu-frame">
+    <img src={menuImage} alt="Menu" className={`menu-img ${isOpen ? 'rotate' : ''}`} />
+  </div>
+</button>
+
 
       {/* Drawer Menu */}
       <nav className={`drawer ${isOpen ? 'open' : ''}`}>

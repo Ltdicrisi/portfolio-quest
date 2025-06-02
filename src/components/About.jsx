@@ -1,17 +1,30 @@
+import dummyImage from '../assets/images/dummy.svg';
+
 function About() {
     return (
-        <section className="projects">
-            <h2>About Me</h2>
-            <p>
-        Hail! I am <strong>Lauren “Emerald Hawthorne” Di Crisi</strong>, a Druid of the Digital Realm.
-        I began my journey in the year of 2023, forging runes in HTML, CSS, JavaScript, and React.
-        Formerly a master of inks and wallpapers, I now seek to bend the web to my will as a full stack developer.
+      
+  <section id="about" className="about-section">
+    <hr className="divider" />
+    <div className="about-container">
+    <div className="about-image-wrapper">
+      <img src={dummyImage}  alt="Portrait of Lauren Di Crisi" className="about-image" />
+    </div>
+    <div className="about-content">
+      <h2 className="about-heading">About Me</h2>
+      <p className="about-text">
+        I’m Lauren Di Crisi, a Full Stack Developer with 15+ years of cross-industry experience spanning manufacturing, sales, utilities, and creative design. My journey began with printing presses and production workflows — now, I bring that real-world insight to code, specializing in backend development and cloud solutions that solve practical problems at scale.
       </p>
-      <p>
-        I specialize in weaving magic through the MERN stack, taming databases, and crafting elegant user interfaces.
-        With my trusty Familiar, Yang, and my party of curious cats and code-wielders, I fight for clean code, accessibility, and tech justice!
+      <p className="about-text">
+        Fueled by curiosity and caffeine, I thrive at the intersection of logic and creativity. Whether it’s optimizing a legacy system, building a streamlined dashboard, or crafting a clean, responsive UI — I’m here to build tech that works for the people using it.
       </p>
-        </section>
+      <p className="about-text">
+        Currently focused on AWS certification, MERN stack mastery, and preparing to step into a junior developer role where I can make meaningful impact from day one.
+      </p>
+    </div>
+  </div>
+</section>
+
+
     );
 }
 

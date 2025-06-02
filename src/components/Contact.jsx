@@ -1,13 +1,12 @@
 import React from "react";
 import "./Contact.css";
-import decoFrame from "../assets/images/frame-image.webp"; // Ensure this path is correct!
+
 
 function Contact() {
   return (
    <section className="contact-section">
   <div className="contact-frame-wrapper">
-    {/* Frame as background */}
-    <img src={decoFrame} alt="Deco Frame" className="contact-frame" />
+  
 
     {/* This div sits on top of the frame */}
     <div className="contact-form-overlay">

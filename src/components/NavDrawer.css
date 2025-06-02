@@ -1,8 +1,11 @@
 .navdrawer-container {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
   z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .menu-button {
@@ -11,14 +14,17 @@
   padding: 0;
   margin: 0;
   outline: none;
-  cursor: pointer;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent; /* removes iOS blue/gray border */
 }
 
 .menu-img {
-  width: 60px; /* Adjust as needed */
+  width: 100px;
   height: auto;
-  transition: transform 0.8s ease-in-out;
+  display: block;
+  transition: transform 0.6s ease-in-out;
 }
+
 
 @media (max-width: 768px) {
   .menu-img {
@@ -31,7 +37,7 @@
 }
 
 .menu-img:hover {
-  filter: drop-shadow(0 0 8px var(--gold-glow));
+  transform: scale(1.1);
 }
 
 .drawer {
@@ -66,4 +72,16 @@
 
 .drawer a:hover {
   color: var(--color-accent);
+}
+
+.menu-frame {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* For accessibility */
+.menu-button:focus-visible {
+  outline: 2px dashed #c4a77d;
+  outline-offset: 4px;
 }

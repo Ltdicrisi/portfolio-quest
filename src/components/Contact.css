@@ -100,16 +100,3 @@
   font-weight: bold;
 }
 
-.contact-form-overlay {
-  position: relative;
-  z-index: 1;
-  width: 90%;
-  max-width: 500px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 15px var(--glow-gold);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
