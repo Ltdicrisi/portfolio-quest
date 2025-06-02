@@ -1,66 +1,51 @@
+import "./Projects.css";
+
 function Projects (){
-    return (
-        <section className="projects">
-            <h2>Relics of My Journey</h2>
-            <div className="project-cards">
-
-                {/* Project 1 */}
-                <div className="project-card">
-                    <h3>Work Order Tracker</h3>
-                    <p>
-                        A fullstack web app forged in React, Node, and MongoDB- used to track and manage production floor tasks in real time.
-                    </p>
-                    <p><strong>Tech:</strong>React, Express, Node.js, MongoDB </p>
-                    <a href=" https://github.com/Ltdicrisi/work-order-tracker" target="_blank" >View on GitHub </a>
-                </div>
-
-                {/* Project 2 */}
-                <div className="project-card">
-                    <h3>Portfolio Quest</h3>
-                    <p>
-                        This very site! A showcases of skills and story, crafted in Vite+ React and styles with whimsy.
-                    </p>
-                    <p>
-                    <strong>
-                        Tech:
-                    </strong>
-                    Vite, React, CSS
-                    </p>
-                    <a href="https://github.com/Ltdicrisi/portfolio-quest" target="_blank">View on GitHub</a>
-                </div>
-
-                {/* Project 3 */}
-                <div className="project-card">
-                    <h3>Curated Souf</h3>
-                    <p>
-                        This very site! A showcases of skills and story, crafted in Vite+ React and styles with whimsy.
-                    </p>
-                    <p>
-                    <strong>
-                        Tech:
-                    </strong>
-                    Vite, React, CSS
-                    </p>
-                    <a href="https://github.com/Ltdicrisi/portfolio-quest" target="_blank">View on GitHub</a>
-                </div>
-
-                {/* Project 4 */}
-                <div className="project-card">
-                    <h3>ShiftSync</h3>
-                    <p>
-                        This very site! A showcases of skills and story, crafted in Vite+ React and styles with whimsy.
-                    </p>
-                    <p>
-                    <strong>
-                        Tech:
-                    </strong>
-                    Vite, React, CSS
-                    </p>
-                    <a href="https://github.com/Ltdicrisi/portfolio-quest" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-        </section>
-    );
+    const projectList = [
+         {
+      title: "Work Order Tracker",
+      description: "A fullstack web app forged in React, Node, and MongoDB—used to track and manage production floor tasks in real time.",
+      tech: "React, Express, Node.js, MongoDB",
+      github: "https://github.com/Ltdicrisi/work-order-tracker",
+    },
+    {
+      title: "Portfolio Quest",
+      description: "This very site! A showcase of skills and story, crafted in Vite + React and styled with whimsy.",
+      tech: "Vite, React, CSS",
+      github: "https://github.com/Ltdicrisi/portfolio-quest",
+    },
+    {
+      title: "Curated Souf",
+      description: "A curated collection and community spotlight platform, blending aesthetic flair with modern stack power.",
+      tech: "Vite, React, Firebase (Planned)",
+      github: "https://github.com/Ltdicrisi/portfolio-quest",
+    },
+    {
+      title: "ShiftSync",
+      description: "A communication hub for shift-based teams with task handoffs, alerts, and future SMS automation.",
+      tech: "MERN Stack, AWS (Planned), Twilio",
+      github: "https://github.com/Ltdicrisi/portfolio-quest",
+    },
+  ];
+      return (
+    <section className="projects-section">
+      <h2 className="projects-title">Relics of My Journey</h2>
+      <div className="project-grid">
+        {projectList.map((proj, index) => (
+          <div className="project-card" key={index}>
+            {/* Optional image here */}
+            {/* <img src={proj.image} alt={`${proj.title} screenshot`} /> */}
+            <h3>{proj.title}</h3>
+            <p>{proj.description}</p>
+            <p><strong>Tech:</strong> {proj.tech}</p>
+            <a href={proj.github} target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Projects;
