@@ -1,7 +1,8 @@
 # Portfolio Quest
 
 ## Description
-A handcrafted developer portfolio that blends Dark Academia aesthetics with Art Deco flair, showcasing my transition from manufacturing to full stack development. This site is not just a portfolio — it's an immersive narrative experience built with React and backed by real-world architecture and full stack skills.
+ This is a work in Progress and is currently NOT finished. 
+A handcrafted developer portfolio that blends Dark Academia aesthetics with Art Deco flair, showcasing my transition from manufacturing to full stack development. This site is not just a portfolio — it's an immersive narrative experience built with React and backed by real-world architecture and full stack skills. 
 
 ## Table of Contents
 - [Installation](#installation)  
